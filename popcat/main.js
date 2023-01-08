@@ -1,8 +1,11 @@
 const counted = localStorage.getItem("pop");
+const jeodoljeok = localStorage.getItem("nickname")
 let n = counted;
 
+document.getElementById("1").click();
+
 function count(){
-     uu = localStorage.getItem("pop")
+      uu = localStorage.getItem("pop")
     n++;
 
     localStorage.setItem("pop", n)
@@ -42,7 +45,7 @@ shareButton.addEventListener('click', event => {
         navigator.share({
 
             title: 'Popcat click the cat!',
-            text: 'this person clicked the cat ' + uu + ' times!',
+            text:  jeodoljeok +  ' clicked the cat ' + uu + ' times!',
             url: 'https://popcat3.netlify.app/'
 
         }).then(() => {
