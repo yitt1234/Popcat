@@ -30,7 +30,7 @@ $("#profileimage").click(function(){
 });
 
 //카카오 로그인 코드
-window.Kakao.init('6d3243190fb626e5ee4016b108790f3c');
+window.Kakao.init('Your Api key');
         function kakaoLogin() {
             window.Kakao.Auth.login({
                 scope: ' account_email, profile_nickname, profile_image', //동의항목 페이지에 있는 개인정보 보호 테이블의 활성화된 ID값을 넣습니다.
